@@ -55,6 +55,11 @@ padding: 0;
     background-color: #cc0000;
 }
 
+.completado{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
 
 
     
