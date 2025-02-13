@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo Tareas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <meta charset="UTF-8">
-meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Listado de tareas</title>
 </head>
 <body>
     <div class="container">
         <h1>Listado de tareas</h1>
-        <input type="text"id="nuevaTarea"placeholder="Nueva tarea">
-        <button>agregar</button>
-        <ul id="Listado de Tareas">
-            <li>Tareas de prueba</li>
-            <li>Tareas de prueba</li>
-            <li>Tareas de prueba</li>
+        <input type="text" name="nuevaTarea" id="nuevaTarea" placeholder="Nueva tarea...">
+        <button onclick="agregarTarea()">Agregar</button>
+        <ul id="listadoTareas">
+           <!-- <li><span>Tarea prueba </span>
+                <button class="Borrar btn">Eliminar </button>
+            </li>
+            <li><span>Tarea de prueba </span>
+                <button class="Borrar btn">Eliminar </button>
+            </li>
+            <li><span>Tarea de prueba </span>
+                <button class="Borrar btn">Eliminar </button>
+            </li>-->
         </ul>
+            
     </div>
+    <script src="toDoTareas.js"></script>
 </body>
 </html>
