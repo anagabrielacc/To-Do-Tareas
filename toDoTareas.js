@@ -48,10 +48,30 @@ tareas.push({
 })
 
 })
-localStorage.setItem('tareasGuardadas, tareas');
+localStorage.setItem('tareasGuardadas', tareas ,JSON.stringify(tareas));
+
+function cargarTareas(){
+     const tareas= JSON.parse(localStorage.getItem('tareasGuardadas')) || [];
+     const listadoTareas= document.getElementById('listadoTraeas');
+     
+     tareas.forEach(tarea =>{
+     const li= document.createElement('li');
+     li.innerHTML=`
+     <span>${tarea.Nombre_Tarea}</span>
+     <button class=borrar-btn onClick="borrarTareas(this)">Eliminar</button>
+     `;
+     if(tarea.Estado_Tarea ==true){
+          li.classList.add('completado');
+
+     }
+     listadoTareas.appendChild(li);
+
+
+     });
 
 
 
+}
 }
 
 
